@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 头部 */
+header{
+    width: 100%;
+    height: 90px;
+    border: 1px solid #999;
+}
+header .top{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+.top .log{
+    float: left;
+}
+.top .log img{
+    width: 200px;
+}
+.top ul{
+    float: left;
+   height: 80px;
+}
+.top ul>li{
+    float: left;
+    line-height: 80px;
+    padding: 0  40px;
+}
+.top ul li>a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(63, 61, 61);
+}
+#shouye{
+    color: red;
+}
+#butto {
+    float: right;
+    margin-right: 50px;
+    line-height: 80px;
+    padding: 0px 50px;
+    position: relative;
+    
+}
+#sousuo img{
+    position: absolute;
+    top: 8px;
+    right: 140px;
+    margin-top: 10px;
+}
+
+ #zhucea{
+    margin-top: 15px;
+    float: left;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: rgb(245, 43, 43);
+    outline: none;
+}
+#sousuo:hover{
+    transform: scale(1.3);
+}
+/* 底部 */
+footer{
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #505050;
+    position: relative;
+    float: left;
+}
+.footer2{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer2 .erweima{
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    position: relative;
+}
+#tu2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+#tu2>img{
+    height: 180px;
+}
+.erweima:hover #tu2{
+    opacity: 1;
+}
+.jiguo{
+    width: 150px;
+    float: left;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.jiguo>p{
+   margin-top: 30px;
+   font-size: 12px;
+   color: #999;
+}
+.mianfei{
+    float: left;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.footer2 h1{
+    font-size: 16px;
+    color: white; 
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.mianfei p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+}
+.youqing{
+    float: left;
+    width: 140px;
+    margin-left: 20px;
+    margin-top: 30px; 
+}
+.youqing span{
+    float: left;
+    width: 58px;
+    height: 18px;
+    font-size: 12px;
+    color: #999;
+}
+.goumai{
+    float: left;
+    width: 140px;
+    margin-left: 20px;
+    margin-top: 30px; 
+}
+.goumai p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+}
+.changshang{
+    float: left;
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.changshang p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+}
+.shangbiao{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 3%;
+    right: 3%;
+    text-align: center;
+    line-height: 50px;
+    z-index: 99;
+    background-color:#E8E8E8;
+    border-radius: 5px;
+}
+footer>p{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #999;
+}
+
+/* 酷玩首页 */
+a{
+    text-decoration: none;
+    color:black;
+}
+section{
+    width: 100%;
+}
+section .play{
+   width:1200px;
+   height: 211px;
+   margin: 0 auto;
+   background-color: white;
+   overflow: hidden;
+}
+
+.play h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 60px 0px;
+}
+.play .play_a{
+    text-align: center;
+    font-size: 20px;
+}
+.play .play_a a{
+    display: inline-block;
+    width: 200px;
+    color: #747272;
+
+    padding-bottom:5px;
+}
+/* 下划线的部分 */
+.down_line{
+    border-bottom: 4px solid #FE5431;
+}
+/*下划线部分结束*/
+.top3{
+    width: 1182px;
+    height: 400px;
+    /* background-color: #666; */
+    margin: 0 auto;
+}
+.top3 li{
+    width: 270px;
+    height: 330px;
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+#ccc li:hover{
+    transform: scale(1.1);
+}
+.top3 a{
+    text-decoration: none;
+    color: black;
+}
+.top3 li img{
+    width: 270px;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+}
+.top3 p span{
+    margin-left: 5px;
+}
+.top3 p img{
+    width: 10px;
+    height: 10px;
+}
+.top3 p span:nth-child(1){
+    margin-left: 70px;
+    
+}
+.top3 li p:nth-child(2){
+    margin-top:15px;
+    font-size: 18px;
+}
+.top3 li p:nth-child(3){
+    margin-top: 15px;
+    color: rgb(197, 193, 193);
+    font-size: 20px;
+    margin-left: 10px;
+}
+#span_1{
+    margin-left: 180px;
+    font-size: 20px;
+}
+#ccc>p>span{
+    font-size: 25px;
+}
+.xiala{
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background-color: #F7F7F7;
+    float: left;
+    margin-top: 20px;
+}
+.xiala>p{
+    width: 180px;
+    font-size: 18px;
+    color: red;
+    z-index: 4;
+    margin: auto;
+    padding-left: 60px;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极果首页</title>
+    <link rel="stylesheet" href="./css/libooj.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="log"><a href=""><img src="./img/logonew.png" alt=""></a></div>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./kuwan/index.html">酷玩</a></li>
+                <li><a href="./daogou/daogou.html">导购</a></li>
+                <li><a href="./shiyong/index.html">试用</a></li>
+                <li><a href="./baogao/index.html">报告</a></li>
+            </ul>
+            <div class="top1">
+                <a href="" id="sousuo"><img src="./img/search.png" alt=""></a>
+                <a href="./zhuce.html" id="zhucea">注册</a>
+            </div>
+        </div>
+    </header>
+    <!-- 免费试用首页-->
+    <section>
+
+        <div class="zhuce">
+            <div class="zhuce_a">
+                <div class="zhuce_b">
+                    <p>注册极果</p>
+                </div>
+                <form action="./shiyong/index.html">
+                    <div class='zhuce_c'>
+                        <input type="text" value="" class="chang" placeholder="请输入登录手机号">
+                        <p></p>
+                        <input type="text" value="" class="duan" placeholder="请输入图片验证码">
+                        <p id="tu"><img src="./img/imgCode.jpg" alt=""></p>
+                        <input type="text" value="" class="duan" placeholder="请输入4位数字验证码">
+                        <p id="yanma">获取验证码</p>
+                        <input type="text" value="" class="chang" placeholder="请输入用户名">
+                        <p></p>
+                        <input type="password" value="" class="chang" placeholder="请输入新密码">
+                        <p></p>
+                        <input type="password" value="" class="chang" placeholder="确认新密码">
+                        <p></p>
+                        <input type="button" value="同意协议并注册" id="submitBtn" class="chang">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer2">
+            <div class="erweima">
+                <a href="" id="tu1"><img src="./img/code.png" alt=""></a>
+                <a href="" id="tu2"><img src="./img/myCode.jpg" alt=""></a>
+            </div>
+            <div class="jiguo">
+                <img src="./img/logoImg.jpg" alt="">
+                <p>全球酷玩使用导购平台 <br>酷 新奇 好玩 品质</p>
+                <p> 微信添加 “jguojguo”<br>获取我们的服务。</p>
+            </div>
+            <div class="mianfei">
+                <h1>免费试用</h1>
+                <p>试用流程</p>
+                <p> 如何提高成功率 </p>
+            </div>
+            <div class="youqing">
+                <h1>友情链接</h1>
+                <span>智东西</span>
+                <span>WEIBUSI</span>
+                <span>搜狐IT</span>
+                <span>腾讯科技</span>
+                <span>搜狐数码</span>
+                <span>凤凰科技</span>
+                <span>凤凰数码</span>
+                <span>PConline</span>
+                <span>泡泡网</span>
+                <span>3W咖啡</span>
+                <span>ZUK社区</span>
+                <span>亿觅emle</span>
+                <span>极客公园</span>
+                <span>易迅易启玩</span>
+                <span>果库</span>
+            </div>
+            <div class="goumai">
+                <h1>购买攻略</h1>
+                <p>美亚海淘教程</p>
+                <p>日亚海淘教程</p>
+                <p>淘淘转运攻略</p>
+                <p>kickstarter 众筹购买攻略</p>
+                <p>indiegogo 众筹购买攻略</p>
+            </div>
+            <div class="changshang">
+                <h1>厂商合作</h1>
+                <p>关于极果</p>
+                <p>联系我们</p>
+                <p>商务合作:1328796639@qq.com</p>
+                <p>CEO邮箱:1328796639@qq.com</p>
+            </div>
+        </div>
+        <p>&copy;2016极果版权所有
+        </p>
+    </footer>
+</body>
+
+</html>
+<script>
+    var phone_ = document.getElementsByClassName('chang')[0]; //手机号
+    var user_ = document.getElementsByClassName('chang')[1];  //用户名
+    var pas_1 = document.getElementsByClassName('chang')[2];  //密码
+    var pas_2 = document.getElementsByClassName('chang')[3];   //新密码
+    var mit_ = document.getElementById('submitBtn');  //提交
+    phone_.onfocus = function () {
+        this.nextElementSibling.innerHTML = '输入正确格式';
+        this.nextElementSibling.style.color = 'red';
+    }
+    phone_.onblur = function () {
+        var reg = /^1[3-9]\d{9}$/;
+        if (phone_.value == '') {
+            this.nextElementSibling.innerHTML = '输入不能为空';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+        } else if (!reg.test(phone_.value)) {
+            this.nextElementSibling.innerHTML = '输入格式不正确';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+        } else {
+            this.nextElementSibling.innerHTML = '正确';
+            this.nextElementSibling.style.color = 'green';
+            return true;
+        }
+    }
+    // 用户名
+    user_.onfocus = function () {
+        this.nextElementSibling.innerHTML = '3-9位中文名';
+        this.nextElementSibling.style.color = 'red';
+    }
+    user_.onblur = function () {
+        var reg = /^[\w\u4e00-\u9fa5]{3,9}$/;
+        if (user_.value == '') {
+            this.nextElementSibling.innerHTML = '输入不能为空';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+        } else if (!reg.test(user_.value)) {
+            this.nextElementSibling.innerHTML = '输入格式不正确';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+        } else {
+            this.nextElementSibling.innerHTML = '正确';
+            this.nextElementSibling.style.color = 'green';
+            return true;
+        }
+    }
+    // 第一次登录密码确认
+    pas_1.onfocus = function () {
+        this.nextElementSibling.innerHTML = '输入正确格式';
+        this.nextElementSibling.style.color = 'red';
+    }
+    pas_1.onblur = function () {
+        var reg = /\w{6,12}/;
+        var reg1 = /[^0-9]/;
+        var reg2 = /[^a-zA-Z]/;
+        if (pas_1.value == '') {
+            this.nextElementSibling.innerHTML = '输入不能为空';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+        } else if (!reg1.test(pas_1.value)) {
+            this.nextElementSibling.innerHTML = '输入格式不能全为数字';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+
+        } else if (!reg2.test(pas_1.value)) {
+            this.nextElementSibling.innerHTML = '输入格式不能全为字母';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+
+        } else {
+            this.nextElementSibling.innerHTML = '正确';
+            this.nextElementSibling.style.color = 'green';
+            return true;
+        }
+    }
+    // 第二次登录密码确认
+    pas_2.onfocus = function () {
+        this.nextElementSibling.innerHTML = '输入正确格式';
+        this.nextElementSibling.style.color = 'red';
+    }
+    pas_2.onblur = function () {
+        if (pas_2.value == '') {
+            this.nextElementSibling.innerHTML = '输入的不能为空';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+        } else if (pas_1.value !== pas_2.value) {
+            this.nextElementSibling.innerHTML = '两次输入的密码不同';
+            this.nextElementSibling.style.color = 'red';
+            return false;
+
+        } else {
+            this.nextElementSibling.innerHTML = '正确';
+            this.nextElementSibling.style.color = 'green';
+            return true;
+        }
+    }
+    // 提交按钮
+    mit_.onclick = function () {
+        if (phone_.onblur() && user_.onblur() && pas_1.onblur() && pas_2.onblur()) {
+            document.getElementsByTagName('form')[0].submit();
+        } else {
+            this.style = 'disabled';
+        }
+    }
+      // 获取验证码
+      var yanma_ = document.getElementById('yanma');
+    var num = 60;
+    var time;
+    yanma_.onclick=function(){
+        clearInterval(time)
+        time=setInterval(fn,1000)
+    }
+    
+   function fn(){
+       num--;
+       if(num>0){
+           yanma_.innerHTML=('('+num+'秒)重发');
+       }else{
+           num=60;
+           yanma_.innerHTML('重新发送');
+           clearInterval(time);
+       }
+   }
+</script>

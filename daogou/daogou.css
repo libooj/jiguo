@@ -1,0 +1,44 @@
+.top4 li{
+    width: 270px;
+    height: 330px;
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+.top4 a{
+    text-decoration: none;
+    color: black;
+}
+.top4 li img{
+    width: 270px;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+}
+.top4 p span{
+    margin-left: 5px;
+}
+.top4 p img{
+    width: 10px;
+    height: 10px;
+}
+.top4 p span:nth-child(1){
+    margin-left: 70px;
+    
+}
+.top4 li p:nth-child(2){
+    margin-top:15px;
+    font-size: 18px;
+}
+.top4 li p:nth-child(3){
+    margin-top: 15px;
+    color: rgb(197, 193, 193);
+    font-size: 18px;
+    margin-left: 10px;
+}
+#ddd :hover{
+    transform: scale(1.1);
+}
