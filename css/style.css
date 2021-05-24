@@ -378,7 +378,7 @@ article {
     /* background-color: rgb(233, 202, 202); */
     display: inline-block;
     float: left;
-    margin-left: 357px;
+    
     overflow: hidden;
 }
 
@@ -386,7 +386,7 @@ aside {
     width: 300px;
     height: 600px;
     /* background-color: rgb(207, 74, 74); */
-    float: left;
+    float: right;
 }
 aside img{
     margin-left: 19px;
@@ -509,3 +509,13 @@ article p:nth-of-type(10){
     font-size: 18px;
     margin-left: 10px;
 }
+.asd{
+    width: 1182px;
+    margin: 0 auto;
+}
+#time {
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
